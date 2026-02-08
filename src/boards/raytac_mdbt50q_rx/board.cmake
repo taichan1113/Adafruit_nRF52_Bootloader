@@ -1,0 +1,3 @@
+set(MCU_VARIANT nrf52840)
+set(MCU_FAMILY nrf52)
+set(MCU_SERIES nrf52)
