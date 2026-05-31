@@ -56,6 +56,7 @@ dkms.conf
 
 segger/Output
 _build/
+cmake-build-*/
 bin/
 *.emSession
 *.jlink
