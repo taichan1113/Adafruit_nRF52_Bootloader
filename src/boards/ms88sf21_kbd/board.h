@@ -22,53 +22,41 @@
  * THE SOFTWARE.
  */
 
-#ifndef MS88SF21_KBD
-#define MS88SF21_KBD
-
-#define _PINNUM(port, pin)    ((port)*32 + (pin))
+#ifndef MS88SF21_KBD_H
+#define MS88SF21_KBD_H
 
 /*------------------------------------------------------------------*/
 /* LED
  *------------------------------------------------------------------*/
 
-//TODO
 #define LEDS_NUMBER       1
-#define LED_PRIMARY_PIN   _PINNUM(1, 15)
+#define LED_PRIMARY_PIN   PINNUM(1, 15)
 #define LED_STATE_ON      1
 
 /*------------------------------------------------------------------*/
 /* BUTTON
  *------------------------------------------------------------------*/
 #define BUTTONS_NUMBER    2  // not wired outside of MS88SF2
-#define BUTTON_1          _PINNUM(1, 1)
-#define BUTTON_2          _PINNUM(1, 2)
+#define BUTTON_DFU        PINNUM(1, 1)
+#define BUTTON_DFU_OTA    PINNUM(1, 2)
 #define BUTTON_PULL       NRF_GPIO_PIN_PULLUP
 
 //--------------------------------------------------------------------+
 // BLE OTA
 //--------------------------------------------------------------------+
 #define BLEDIS_MANUFACTURER  "BP"
-#define BLEDIS_MODEL         "Cornotry"
+#define BLEDIS_MODEL         "MS88SF21 KBD"
 
 //--------------------------------------------------------------------+
 // USB
 //--------------------------------------------------------------------+
-// #define USB_DESC_VID           0x4B41 //KA
-// #define USB_DESC_UF2_PID       0x5453 //TS
-// #define USB_DESC_CDC_ONLY_PID  0x5453 //TS
+#define USB_DESC_VID           0xBF30U
+#define USB_DESC_UF2_PID       0xC0FEU
+#define USB_DESC_CDC_ONLY_PID  0xC0FEU
 
-// #define UF2_PRODUCT_NAME  "Split Logic Board BLE"
-// #define UF2_VOLUME_LABEL  "SLBBLE"
-// #define UF2_BOARD_ID      "split-logic-board-ble"
-// #define UF2_INDEX_URL     "http://mohammedari.blogspot.com/"
-
-#define USB_DESC_VID           0x239A
-#define USB_DESC_UF2_PID       0x0029
-#define USB_DESC_CDC_ONLY_PID  0x0029
-
-#define UF2_PRODUCT_NAME    "Cornotry KBD"
-#define UF2_BOARD_ID        "Cornotry"
+#define UF2_PRODUCT_NAME    "MS88SF21 KBD"
+#define UF2_VOLUME_LABEL    "MS88BOOT"
+#define UF2_BOARD_ID        "MS88SF21_KBD"
 #define UF2_INDEX_URL       "https://x.com/BParound30"
 
-
-#endif
+#endif // MS88SF21_KBD_H
