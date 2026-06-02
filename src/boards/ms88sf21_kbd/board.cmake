@@ -1,3 +1,4 @@
 set(MCU_VARIANT nrf52840)
 set(MCU_FAMILY nrf52)
 set(MCU_SERIES nrf52)
+set(SD_VERSION 7.3.0)

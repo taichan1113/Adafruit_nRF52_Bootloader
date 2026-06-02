@@ -30,16 +30,12 @@
  *------------------------------------------------------------------*/
 
 #define LEDS_NUMBER       1
-#define LED_PRIMARY_PIN   PINNUM(1, 15)
+#define LED_PRIMARY_PIN   PINNUM(0, 26)
 #define LED_STATE_ON      1
 
 /*------------------------------------------------------------------*/
 /* BUTTON
  *------------------------------------------------------------------*/
-#define BUTTONS_NUMBER    2  // not wired outside of MS88SF2
-#define BUTTON_DFU        PINNUM(1, 1)
-#define BUTTON_DFU_OTA    PINNUM(1, 2)
-#define BUTTON_PULL       NRF_GPIO_PIN_PULLUP
 
 //--------------------------------------------------------------------+
 // BLE OTA
