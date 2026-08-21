@@ -54,6 +54,7 @@
 | raytac_mdbt50q_rx | Raytac MDBT50Q-RX | 0x239A:0x010B | https://www.adafruit.com/product/5199 |
 | sparkfun_nrf52840_micromod | SparkFun MicroMod nRF52840 | 0x1B4F:0x0022 | https://www.sparkfun.com/products/16984 |
 | t1000_e | Seeed T1000-E for Meshtastic | 0x2886:0x0057 | https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html |
+| travelers-board-split | travelers-board-split (NINA-B302-00B) | 0x1209:0x000A (test only) | N/A |
 | waveshare_nrf52840_eval | Waveshare nRF52840 Eval | 0x239A:0x0029 | https://www.waveshare.com/wiki/NRF52840_Eval_Kit |
 | xiao_nrf52840_ble | Seeed XIAO nRF52840 | 0x2886:0x0044 | https://www.seeedstudio.com/ |
 | xiao_nrf52840_ble_sense | Seeed XIAO nRF52840 | 0x2886:0x0045 | https://www.seeedstudio.com/ |
